@@ -1,25 +1,25 @@
 import Experience from "../Experience";
-import * as THREE from "three"
+import * as THREE from "three";
 
-export default class Envirnoment{
-    constructor(){
-        this.experience = new Experience();
-        this.scene = this.experience.scene;
-        
-        this.setSunlight();
-    }
+export default class Envirnoment {
+  constructor() {
+    this.experience = new Experience();
+    this.scene = this.experience.scene;
 
-    setSunlight(){
-        this.sunLight = new THREE.DirectionalLight(0xffffff, 3);
-        this.sunLight.castShadow = true;
-        this.sunLight.shadow.camera.far = 20;
-        this.sunLight.shadow.mapSize.set(1024, 1024);
-        
-    }
-    
-    resize(){
-    }
-    
-    update(){
-    }
+    this.setSunlight();
+  }
+
+  setSunlight() {
+    this.sunLight = new THREE.DirectionalLight(0xffffff, 3);
+    this.sunLight.castShadow = true;
+    this.sunLight.shadow.camera.far = 20;
+    this.sunLight.shadow.mapSize.set(1024, 1024);
+    this.sunLight.shadow.normalBias = 0.05;
+    this.sunLight.position.set(1.5, 7, 3);
+    this.scene.add(this.sunLight);
+  }
+
+  resize() {}
+
+  update() {}
 }
