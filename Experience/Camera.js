@@ -23,7 +23,8 @@ export default class Camera {
     );
 
     this.scene.add(this.perspectiveCamera);
-    this.perspectiveCamera.position.z = 5;
+    this.perspectiveCamera.position.x = -13;
+    this.perspectiveCamera.position.y = 8;
   }
   createOrthographicsCamera() {
     this.frustrumSize = 5;
@@ -44,6 +45,11 @@ export default class Camera {
 
     const axesHelper = new THREE.AxesHelper(10);
     this.scene.add(axesHelper);
+
+    //move the orthographic camera
+    this.orthographicCamera.position.x = -10;
+    this.orthographicCamera.position.y = 1;
+    0;
 
     this.scene.add(this.orthographicCamera);
   }

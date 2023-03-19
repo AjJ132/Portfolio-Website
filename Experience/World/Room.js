@@ -15,6 +15,34 @@ export default class Room {
   }
 
   setModel() {
+    this.actualRoom.children.forEach((child) => {
+      child.castShadow = true;
+      child.receiveShadow = true;
+
+      if (child instanceof THREE.Group) {
+        child.children.forEach((groupChild) => {
+          groupChild.castShadow = true;
+          groupChild.receiveShadow = true;
+        });
+      }
+
+      if (child.name === "MonitorScreen") {
+        console.log("found monitor screen");
+        child.material = new THREE.MeshBasicMaterial({
+          map: this.resources.items.screen,
+        });
+      }
+
+      if (child.name === "Window") {
+        child.material = new THREE.MeshPhysicalMaterial();
+        child.material.roughness = 0;
+        child.material.color.set(0xffffff);
+        child.material.ior = 3;
+        child.material.transmission = 1;
+        child.material.opacity = 1;
+      }
+    });
+
     this.scene.add(this.actualRoom);
     this.actualRoom.rotation.y = Math.PI;
   }
