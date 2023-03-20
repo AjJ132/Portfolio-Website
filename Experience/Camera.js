@@ -37,6 +37,11 @@ export default class Camera {
       50
     );
 
+    // 6.5
+    // this.orthographicCamera.position.y = 5.65;
+    // this.orthographicCamera.position.z = 10;
+    // this.orthographicCamera.rotation.x = -Math.PI / 6;
+
     this.scene.add(this.orthographicCamera);
 
     //create a helper for the orthographic camera
@@ -51,14 +56,12 @@ export default class Camera {
 
     const axesHelper = new THREE.AxesHelper(10);
     this.scene.add(axesHelper);
-
-    this.scene.add(this.orthographicCamera);
   }
 
   setOrbitControls() {
     this.controls = new OrbitControls(this.perspectiveCamera, this.canvas);
     this.controls.enableDamping = true;
-    this.controls.enableZoom = true;
+    this.controls.enableZoom = false;
   }
 
   resize() {
@@ -80,13 +83,12 @@ export default class Camera {
   update() {
     this.controls.update();
 
-    //this.helper.matrixWorldNeedsUpdate = true;
-
+    this.helper.matrixWorldNeedsUpdate = true;
     this.helper.update();
     this.helper.position.copy(this.orthographicCamera.position);
     this.helper.rotation.copy(this.orthographicCamera.rotation);
 
     //display the position of the camera
-    //console.log(this.perspectiveCamera.position);
+    //onsole.log(this.orthographicCamera.position);
   }
 }

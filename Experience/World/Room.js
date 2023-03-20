@@ -26,12 +26,12 @@ export default class Room {
         });
       }
 
-      if (child.name === "MonitorScreen") {
-        console.log("found monitor screen");
-        child.material = new THREE.MeshBasicMaterial({
-          map: this.resources.items.screen,
-        });
-      }
+      // if (child.name === "MonitorScreen") {
+      //   console.log("found monitor screen");
+      //   child.material = new THREE.MeshBasicMaterial({
+      //     map: this.resources.items.screen,
+      //   });
+      // }
 
       if (child.name === "Window") {
         child.material = new THREE.MeshPhysicalMaterial();
