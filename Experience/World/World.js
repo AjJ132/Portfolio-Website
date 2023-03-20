@@ -2,6 +2,7 @@ import Experience from "../Experience";
 import * as THREE from "three";
 import Room from "./Room";
 import Envirnoment from "./Environment";
+import Controls from "./Controls";
 
 export default class World {
   constructor() {
@@ -15,11 +16,16 @@ export default class World {
     this.resources.on("ready", () => {
       this.environment = new Envirnoment();
       this.room = new Room();
+      this.controls = new Controls();
       console.log("room created");
     });
   }
 
   resize() {}
 
-  update() {}
+  update() {
+    if (this.controls) {
+      this.controls.update();
+    }
+  }
 }
