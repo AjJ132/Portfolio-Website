@@ -23,8 +23,16 @@ export default class Camera {
     );
 
     this.scene.add(this.perspectiveCamera);
-    this.perspectiveCamera.position.x = -19.4;
-    this.perspectiveCamera.position.y = 12.8;
+
+    //set the position of the perspective camera facing down on the scene
+    this.perspectiveCamera.position.y = 10;
+    this.perspectiveCamera.rotation.x = Math.PI / 2;
+    this.perspectiveCamera.rotation.z = 45;
+    this.perspectiveCamera.position.z = -1;
+    this.perspectiveCamera.position.x = -1;
+
+    // this.perspectiveCamera.position.x = -19.4;
+    // this.perspectiveCamera.position.y = 12.8;
   }
 
   createOrthographicsCamera() {

@@ -26,6 +26,7 @@ export default class Room {
     };
 
     this.setModel();
+    this.setLampLight();
     this.onMouseMove();
   }
 
@@ -48,6 +49,25 @@ export default class Room {
       //   });
       // }
 
+      //set materials for LEDStrip to blue
+      if (child.name === "LEDStrip") {
+        child.material = new THREE.MeshBasicMaterial({
+          //make color blue
+          color: 0x3399ff,
+          transparent: true,
+          emmisive: 0x3399ff,
+        });
+      }
+
+      //set materials for lampshade
+      if (child.name === "Lampshade") {
+        child.material = new THREE.MeshBasicMaterial({
+          color: 0xffffff,
+          transparent: true,
+          opacity: 0.98,
+        });
+      }
+
       if (child.name === "Window") {
         child.material = new THREE.MeshPhysicalMaterial();
         child.material.roughness = 0;
@@ -57,7 +77,6 @@ export default class Room {
         child.material.opacity = 1;
       }
     });
-    //this.actualRoom.rotation.y = -Math.PI / 2;
 
     this.actualRoom.scale.set(
       this.scaleValue,
@@ -80,6 +99,22 @@ export default class Room {
       this.lerpX.target = this.rotationX * this.lerpScaleValue;
       this.lerpY.target = this.rotationY * this.lerpScaleValue;
     });
+  }
+
+  setLampLight() {
+    this.lampLight = new THREE.PointLight(0xffffff, 0.5);
+    //set the position of the light above the lamp in the room
+    //this.lampLight.position.set(-0.8, 1, -0.94);
+    const LightbulbPos = this.actualRoom.getObjectByName("Lightbulb").position;
+    this.lampLight.position.set(LightbulbPos.x, LightbulbPos.y, LightbulbPos.z);
+
+    this.scene.add(this.lampLight);
+
+    //create a helper fot lampLight
+    this.lampLightHelper = new THREE.PointLightHelper(this.lampLight, 0.5);
+    this.scene.add(this.lampLightHelper);
+
+    this.actualRoom.add(this.lampLight);
   }
 
   resize() {}

@@ -7,10 +7,11 @@ export default class Envirnoment {
     this.scene = this.experience.scene;
 
     this.setSunlight();
+    this.setScene();
   }
 
   setSunlight() {
-    this.sunLight = new THREE.DirectionalLight(0xffffff, 3);
+    this.sunLight = new THREE.DirectionalLight(0xffffff, 0.2);
     this.sunLight.castShadow = true;
     this.sunLight.shadow.camera.far = 20;
     this.sunLight.shadow.mapSize.set(2048, 2048);
@@ -20,7 +21,7 @@ export default class Envirnoment {
     this.sunLight.position.set(0, 10, 7);
     this.scene.add(this.sunLight);
 
-    this.ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
+    this.ambientLight = new THREE.AmbientLight(0xffffff, 0.2);
     this.scene.add(this.ambientLight);
 
     //create a helper fot sunLight
@@ -28,7 +29,10 @@ export default class Envirnoment {
     this.scene.add(this.sunLightHelper);
   }
 
-  resize() {}
+  setScene() {
+    this.scene.background = new THREE.Color(0x282728);
+  }
 
+  resize() {}
   update() {}
 }
