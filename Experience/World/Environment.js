@@ -25,8 +25,8 @@ export default class Envirnoment {
     this.scene.add(this.ambientLight);
 
     //create a helper fot sunLight
-    this.sunLightHelper = new THREE.DirectionalLightHelper(this.sunLight, 0.5);
-    this.scene.add(this.sunLightHelper);
+    // this.sunLightHelper = new THREE.DirectionalLightHelper(this.sunLight, 0.5);
+    // this.scene.add(this.sunLightHelper);
   }
 
   setScene() {

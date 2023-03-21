@@ -96,7 +96,7 @@ export default class Room {
 
       this.lerpScaleValue = 0.05;
 
-      this.lerpX.target = this.rotationX * this.lerpScaleValue;
+      this.lerpX.target = this.rotationX * this.lerpScaleValue * 2;
       this.lerpY.target = this.rotationY * this.lerpScaleValue;
     });
   }
@@ -111,8 +111,6 @@ export default class Room {
     this.scene.add(this.lampLight);
 
     //create a helper fot lampLight
-    this.lampLightHelper = new THREE.PointLightHelper(this.lampLight, 0.5);
-    this.scene.add(this.lampLightHelper);
 
     this.actualRoom.add(this.lampLight);
   }
