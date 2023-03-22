@@ -10,4 +10,9 @@ export default [
     type: "videoTexture",
     path: "/textures/StockCodingFootage.mp4",
   }, */
+  {
+    name: "SimpleRoom",
+    type: "glbModel",
+    path: "/models/SimpleRoom.glb",
+  },
 ];
