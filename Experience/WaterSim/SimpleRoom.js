@@ -13,6 +13,7 @@ export default class SimpleRoom {
     this.actualRoom = this.simpleRoom.scene;
 
     this.scaleValue = 0.5;
+    
 
     this.setModel();
   }

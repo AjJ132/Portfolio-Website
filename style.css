@@ -53,19 +53,15 @@ body {
 .section-margin {
   height: 1000px;
   width: 100%;
-  background-color: red;
-  opacity: 20%;
 }
 .section {
-  width: 50%;
-  padding: 1000px 4%;
+  width: 100%;
   margin: 0;
   background-color: var(--primary-dark-gray);
-  opacity: 40%;
 }
 
-.left {
-  width: 100%;
+.section-title span {
+  font-size: 100px;
 }
 
 .right {
@@ -74,16 +70,18 @@ body {
 
 .section-intro-wrapper {
   position: relative;
-  padding: 200px 5%;
+  padding-top: 100px;
+  padding-bottom: 100px;
   border-bottom: 2px solid var(--secondary-color);
-  padding-bottom: 400px;
+}
+
+.split-screen-wrapper {
+  display: flex;
 }
 
 .section-details-wrapper {
-  position: relative;
-  padding: 200px 5%;
-  border-bottom: 2px solid var(--secondary-color);
-  padding-bottom: 400px;
+  flex: 0 0 50%;
+  width: 50%;
 }
 
 .section-heading {
@@ -137,4 +135,43 @@ hero-main-title {
 .hero-second-subheading {
   font-size: 32px;
   text-transform: uppercase;
+}
+
+/* Slanted images ------------ */
+
+.section-images-wrapper {
+  flex: 0 0 50%;
+  width: 50%;
+  margin-left: auto;
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background-color: royalblue;
+}
+
+.vertical-image-holder {
+  display: flex;
+  flex-direction: column;
+  background-color: rebeccapurple;
+  width: 100%;
+  align-self: center;
+  align-content: center;
+  height: 100%;
+}
+
+.div1 img {
+  width: 100%;
+  max-width: 600px;
+}
+
+.div2 {
+}
+
+.div2 img {
+}
+
+.div3 img {
 }

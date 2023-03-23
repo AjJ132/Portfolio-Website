@@ -21,7 +21,7 @@ export default class World {
       this.room = new Room();
       this.simpleRoom = new SimpleRoom();
       this.floor = new Floor();
-      this.WaterSim = new this.WaterSim();
+      this.waterSim = new WaterSim();
 
       this.controls = new Controls();
 
