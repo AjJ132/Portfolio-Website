@@ -4,6 +4,8 @@ import Room from "./Room";
 import Envirnoment from "./Environment";
 import Controls from "./Controls";
 import Floor from "./Floor";
+import SimpleRoom from "../WaterSim/SimpleRoom";
+import WaterSim from "../WaterSim/WaterSim";
 
 export default class World {
   constructor() {
@@ -17,9 +19,13 @@ export default class World {
     this.resources.on("ready", () => {
       this.environment = new Envirnoment();
       this.room = new Room();
+      this.simpleRoom = new SimpleRoom();
       this.floor = new Floor();
+      this.WaterSim = new this.WaterSim();
+
       this.controls = new Controls();
-      console.log("room created");
+
+      console.log("Scene set");
     });
   }
 

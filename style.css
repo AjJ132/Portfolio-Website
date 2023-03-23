@@ -53,12 +53,15 @@ body {
 .section-margin {
   height: 1000px;
   width: 100%;
+  background-color: red;
+  opacity: 20%;
 }
 .section {
   width: 50%;
   padding: 1000px 4%;
   margin: 0;
   background-color: var(--primary-dark-gray);
+  opacity: 40%;
 }
 
 .left {

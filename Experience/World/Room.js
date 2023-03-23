@@ -115,6 +115,11 @@ export default class Room {
     this.actualRoom.add(this.lampLight);
   }
 
+  moveModelForSim() {
+    //move actualroom to the right by 10 to make way for the simulation
+    this.actualRoom.position.x = 10;
+  }
+
   resize() {}
 
   update() {

@@ -25,7 +25,7 @@ export default class Camera {
     this.scene.add(this.perspectiveCamera);
 
     //set the position of the perspective camera facing down on the scene
-    this.perspectiveCamera.position.y = 20;
+    this.perspectiveCamera.position.y = 40;
     this.perspectiveCamera.rotation.x = Math.PI / 2;
     this.perspectiveCamera.rotation.z = 45;
     this.perspectiveCamera.position.z = -1;
@@ -56,11 +56,11 @@ export default class Camera {
     // this.helper = new THREE.CameraHelper(this.orthographicCamera);
     // this.scene.add(this.helper);
 
-    const size = 20;
-    const divisions = 20;
+    // const size = 20;
+    // const divisions = 20;
 
-    const gridHelper = new THREE.GridHelper(size, divisions);
-    this.scene.add(gridHelper);
+    // const gridHelper = new THREE.GridHelper(size, divisions);
+    // this.scene.add(gridHelper);
   }
 
   setOrbitControls() {
