@@ -43,11 +43,13 @@ body {
   z-index: 999;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  overflow-y: scroll;
 }
 
 .page-wrapper {
   position: relative;
+  height: 100vh; /* Add this line */
+  scroll-snap-type: y mandatory;
 }
 
 /* Section formatting - - -----------------*/
@@ -59,7 +61,6 @@ body {
 .section {
   width: 100%;
   margin: 0;
-  background-color: var(--primary-dark-gray);
 }
 
 .section-title span {
@@ -68,6 +69,10 @@ body {
 
 .right {
   margin-left: auto;
+}
+
+.scroll-snapper {
+  scroll-snap-align: start;
 }
 
 .section-intro-wrapper {
@@ -83,7 +88,7 @@ body {
   background-color: var(--darker-gray);
 }
 
-.section-details-wrapper {
+.about-me-section-wrapper {
   flex: 0 0 50%;
   width: 50%;
   background-color: var(--darker-gray); /* Slightly darker background color */
