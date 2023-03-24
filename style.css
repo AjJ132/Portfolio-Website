@@ -9,6 +9,7 @@ body {
 
 :root {
   --primary-dark-gray: #282728;
+  --darker-gray: #1c1c1c;
   --primary-color: #223c5b;
   --secondary-color: #091c32;
   --tertiary-color: #626162;
@@ -71,19 +72,22 @@ body {
 
 .section-intro-wrapper {
   position: relative;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  border-bottom: 2px solid var(--secondary-color);
+  padding-top: 80px;
+  padding-bottom: 40px;
+  background-color: var(--darker-gray);
 }
 
 .split-screen-wrapper {
   display: flex;
   min-height: 900px;
+  background-color: var(--darker-gray);
 }
 
 .section-details-wrapper {
   flex: 0 0 50%;
   width: 50%;
+  background-color: var(--darker-gray); /* Slightly darker background color */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box-shadow */
 }
 
 .section-heading {
@@ -91,12 +95,17 @@ body {
   font-weight: 700;
   line-height: 1.8;
   margin-top: 64px;
+  padding-left: 20px;
+  color: #f1f1f1;
 }
 
 .section-text {
   line-height: 2;
   margin-top: 18px;
   font-size: 16px;
+  padding-left: 25px;
+  padding-right: 25px; /* Add some padding on the right side */
+  color: #f1f1f1; /* Lighter text color for better contrast */
 }
 
 /* Hero Section ------------ */
@@ -149,38 +158,31 @@ hero-main-title {
   align-items: center;
   flex-wrap: wrap;
   overflow: hidden;
-  background-color: royalblue;
   max-width: 700px;
-  max-height: 1500px;
+  max-height: 920px;
+  background-color: purple;
 }
 
 .div1 img {
+  top: 0;
   width: 700px;
-  height: calc(100vh / 3);
-  position: relative;
-  max-height: 300px;
+  height: calc((100vh / 3) * 1.2);
+  z-index: 1;
 }
 
 .div2 img {
-  position: relative;
+  margin-top: -60px;
   width: 700px;
   height: calc(100vh / 3);
-  max-height: 300px;
+  transform: rotate(-10deg);
+  scale: 1.2;
+  z-index: 2;
 }
 
 .div3 img {
-  position: relative;
+  margin-top: -60px;
   width: 700px;
   height: calc(100vh / 3);
-  max-height: 300px;
+  z-index: 1;
+  height: auto;
 }
-
-/* .vertical-image-holder {
-  display: flex;
-  flex-direction: column;
-  background-color: rebeccapurple;
-  width: 100%;
-  align-self: center;
-  align-content: center;
-  height: 100%;
-} */
