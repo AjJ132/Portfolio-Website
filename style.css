@@ -101,11 +101,16 @@ body {
 
 .section-text {
   line-height: 2;
-  margin-top: 18px;
+  margin-top: 10px;
   font-size: 16px;
-  padding-left: 25px;
-  padding-right: 25px; /* Add some padding on the right side */
+  padding-left: 40px;
+  padding-right: 40px; /* Add some padding on the right side */
   color: #f1f1f1; /* Lighter text color for better contrast */
+}
+
+.section-text li {
+  font-size: 16px;
+  line-height: 2;
 }
 
 /* Hero Section ------------ */
@@ -160,29 +165,32 @@ hero-main-title {
   overflow: hidden;
   max-width: 700px;
   max-height: 920px;
-  background-color: purple;
+  background-color: var(--darker-gray);
 }
 
-.div1 img {
+.image1 img {
   top: 0;
   width: 700px;
   height: calc((100vh / 3) * 1.2);
+  min-height: calc((100vh / 3) * 1.2);
   z-index: 1;
 }
 
-.div2 img {
+.image2 img {
   margin-top: -60px;
   width: 700px;
   height: calc(100vh / 3);
+  min-height: calc(100vh / 3);
   transform: rotate(-10deg);
   scale: 1.2;
   z-index: 2;
 }
 
-.div3 img {
+.image3 img {
   margin-top: -60px;
   width: 700px;
   height: calc(100vh / 3);
+  min-height: calc(100vh / 3);
   z-index: 1;
   height: auto;
 }
