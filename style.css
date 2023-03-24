@@ -4,6 +4,7 @@ html,
 body {
   font-family: "Oswald", sans-serif;
   color: var(--text-light);
+  display: block;
 }
 
 :root {
@@ -77,6 +78,7 @@ body {
 
 .split-screen-wrapper {
   display: flex;
+  min-height: 900px;
 }
 
 .section-details-wrapper {
@@ -140,19 +142,40 @@ hero-main-title {
 /* Slanted images ------------ */
 
 .section-images-wrapper {
-  flex: 0 0 50%;
   width: 50%;
   margin-left: auto;
-  max-width: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   overflow: hidden;
   background-color: royalblue;
+  max-width: 700px;
+  max-height: 1500px;
 }
 
-.vertical-image-holder {
+.div1 img {
+  width: 700px;
+  height: calc(100vh / 3);
+  position: relative;
+  max-height: 300px;
+}
+
+.div2 img {
+  position: relative;
+  width: 700px;
+  height: calc(100vh / 3);
+  max-height: 300px;
+}
+
+.div3 img {
+  position: relative;
+  width: 700px;
+  height: calc(100vh / 3);
+  max-height: 300px;
+}
+
+/* .vertical-image-holder {
   display: flex;
   flex-direction: column;
   background-color: rebeccapurple;
@@ -160,18 +183,4 @@ hero-main-title {
   align-self: center;
   align-content: center;
   height: 100%;
-}
-
-.div1 img {
-  width: 100%;
-  max-width: 600px;
-}
-
-.div2 {
-}
-
-.div2 img {
-}
-
-.div3 img {
-}
+} */
