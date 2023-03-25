@@ -15,4 +15,9 @@ export default [
     type: "glbModel",
     path: "/models/SimpleRoom.glb",
   },
+  {
+    name: "WaterSim",
+    type: "glbModel",
+    path: "/models/Water.glb",
+  },
 ];

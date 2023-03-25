@@ -38,5 +38,9 @@ export default class World {
     if (this.room) {
       this.room.update();
     }
+
+    if (this.waterSim) {
+      this.waterSim.update();
+    }
   }
 }
