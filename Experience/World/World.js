@@ -4,8 +4,6 @@ import Room from "./Room";
 import Envirnoment from "./Environment";
 import Controls from "./Controls";
 import Floor from "./Floor";
-import SimpleRoom from "../WaterSim/SimpleRoom";
-import WaterSim from "../WaterSim/WaterSim";
 
 export default class World {
   constructor() {
@@ -18,10 +16,9 @@ export default class World {
 
     this.resources.on("ready", () => {
       this.environment = new Envirnoment();
-      this.room = new Room();
-      this.simpleRoom = new SimpleRoom();
+      //this.room = new Room();
+
       this.floor = new Floor();
-      this.waterSim = new WaterSim();
 
       this.controls = new Controls();
 
@@ -37,10 +34,6 @@ export default class World {
     }
     if (this.room) {
       this.room.update();
-    }
-
-    if (this.waterSim) {
-      this.waterSim.update();
     }
   }
 }
