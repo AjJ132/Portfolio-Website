@@ -4,6 +4,7 @@ import Room from "./Room";
 import Envirnoment from "./Environment";
 import Controls from "./Controls";
 import Floor from "./Floor";
+import PoleVaulter from "./Pole Vaulter";
 
 export default class World {
   constructor() {
@@ -19,6 +20,7 @@ export default class World {
       //this.room = new Room();
 
       this.floor = new Floor();
+      this.poleVaulter = new PoleVaulter();
 
       this.controls = new Controls();
 
@@ -34,6 +36,10 @@ export default class World {
     }
     if (this.room) {
       this.room.update();
+    }
+
+    if (this.poleVaulter) {
+      this.poleVaulter.update();
     }
   }
 }
