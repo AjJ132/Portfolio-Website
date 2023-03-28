@@ -1,0 +1,25 @@
+import Experience from "../Experience";
+
+export default class GameFunction {
+  //   //successThreshold: number;
+  //   failThreshold: number;
+  //   currentValue: number;
+  //   speed: number;
+  //   poleLength: string;
+  //   poleLengthVariable: number;
+  //   //create pole length options with string 2d array of poles from 14'7" to 17'0" and give each value a number starting at 1
+  //   poleLengthOptions: string[][] = [
+  //     ["14'7\"", "1"],
+  //     ["15'1\"", "2"],
+  //     ["15'7\"", "3"],
+  //     ["16'1\"", "4"],
+  //     ["16'5\"", "5"],
+  //     ["16'8\"", "6"],
+  //     ["17'0\"", "7"],
+  //   ];
+  //poleLengthOptions: string[] = ["14'7\"", "15'1\"", "15'7\"", "16'1\"", "16'5\"", "16'8\"", "17'0\""];
+
+  constructor() {
+    this.successThreshold = 0;
+  }
+}

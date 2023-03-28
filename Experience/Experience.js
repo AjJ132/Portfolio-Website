@@ -6,6 +6,7 @@ import Time from "./Utils/Time";
 import World from "./World/World";
 import Resources from "./Utils/Resources";
 import assets from "./Utils/Assets";
+import GameFunction from "./PoleVaultGame/GameFunction";
 
 export default class Experience {
   static instance;
@@ -22,6 +23,9 @@ export default class Experience {
     this.renderer = new Renderer();
     this.resources = new Resources(assets);
     this.world = new World();
+
+    //create game function
+    this.GameFunction = new GameFunction();
 
     this.sizes.on("resize", () => {
       this.resize();
