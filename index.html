@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./css/output.css" rel="stylesheet" />
     <link href="./css/main-page.css" rel="stylesheet" />
+    <link href="./css/about-section.css" rel="stylesheet" />
+    <link href="./css/projects-section.css" rel="stylesheet" />
+    <link href="./css/contact-section.css" rel="stylesheet" />
     <title>Vite App</title>
   </head>
   <body>
-    <!-- <div id="app"></div>
-    <script type="module" src="main.js"></script> -->
+    <script type="module" src="main.js"></script>
     <div id="app">
       <div class="page-container">
         <div class="navbar">
@@ -18,16 +20,14 @@
             <p>AJ</p>
           </div>
           <div class="navbar-items-container">
-            <p class="navbar-item">Home</p>
-            <p class="navbar-item">About</p>
-            <p class="navbar-item">Projects</p>
-            <button class="contact-btn">
-              <p>Contact</p>
-            </button>
+            <a href="#home" class="navbar-item">Home</a>
+            <a href="#about" class="navbar-item">About</a>
+            <a href="#projects" class="navbar-item">Projects</a>
+            <a href="#contact" class="contact-btn">Contact</a>
           </div>
         </div>
 
-        <div class="hero-section">
+        <div class="hero-section" id="home">
           <img
             class="hero-background"
             src="./public/sample.png"
@@ -43,7 +43,173 @@
             </div>
           </div>
         </div>
-        <div class="about-section"></div>
+        <div class="about-section-container" id="about">
+          <p>About Me</p>
+          <div class="bar-horizontal-small"></div>
+
+          <div class="about-section-content">
+            <div class="about-section-content-info">
+              <p>Get to know me!</p>
+              <div class="text-body">
+                <p>
+                  I'm a <strong>Full Stack Software Engineer</strong> that likes
+                  to focus on efficency and overall performance inside
+                  applications. I have a backgrond in just about anything
+                  software related and am always up to the task.
+                </p>
+                <p>
+                  I am apart of a collegiate division 1 sports team and know
+                  what its like to work alongside others. I have gained a strong
+                  leadership background through sports and student council
+                  commitess.
+                </p>
+                <p>
+                  I'm seeking a job where I can learn and grow as a
+                  <strong>Software Engineer</strong> and be challenged everyday
+                  that I come into work. Still unsure check out
+                  <a href="#projects">my projects</a> or
+                  <a href="#contact">contact me</a>.
+                </p>
+              </div>
+            </div>
+            <div class="about-section-content-skills">
+              <p>My Skills</p>
+              <div class="skills-container">
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">C#</div>
+                <div class="skill">Java</div>
+                <div class="skill">Git</div>
+                <div class="skill">SQL</div>
+                <div class="skill">Tailwind</div>
+                <div class="skill">!Swift!</div>
+                <div class="skill">ASP .NET</div>
+                <div class="skill">Blazor</div>
+                <div class="skill">Azure</div>
+                <div class="skill">!Kubernetes!</div>
+                <div class="skill">!Docker!</div>
+                <div class="skill">CI/CD</div>
+                <div class="skill">Async</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="projects-section-container" id="projects">
+          <p>PROJECTS</p>
+          <div class="bar-horizontal-small"></div>
+
+          <div class="project-container">
+            <div id="carousel">
+              <div class="carousel-images">
+                <img class="carousel-image" src="./public/github_logo.png" />
+                <img class="carousel-image" src="./public/vite.svg" />
+                <img class="carousel-image" src="./public/sample.png" />
+                <!-- Add more images as needed -->
+              </div>
+              <div id="carousel-indicators">
+                <!-- Indicators will be dynamically added here with JavaScript -->
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-title">
+                <p>ProServ</p>
+              </div>
+              <div class="project-body">
+                <p>
+                  ProServ is a platform that enhances the relationship between
+                  coaches and their athletes by facilitating the creation and
+                  distribution of workouts.
+                </p>
+                <p>
+                  Constructed with Microsoft's Blazor and ASP.NET, ProServ is a
+                  robust, feature-rich platform that offers secure logins,
+                  facilitates payments, and even includes a mobile ios app.
+                </p>
+                <p>
+                  Currently live and fully maintained, ProServ hosted its first
+                  customer in 2023. The initial product development took
+                  approximately three months. ProServ's technical infrastructure
+                  is powered by Azure Web App hosting, SQL technologies, and
+                  maintains a CI/CD pipeline through Github Actions.
+                </p>
+              </div>
+              <div
+                class="flex flex-row justify-center mt-24 gap-8 content-center"
+              >
+                <button class="contact-btn" id="learn-more-proserv">
+                  <p>Learn More</p>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-container">
+            <div class="project-image">
+              <img
+                src="./public/vite.svg"
+                alt="Image"
+                width="400px"
+                height="400px"
+              />
+            </div>
+            <div class="project-info">
+              <div class="project-title">
+                <p>Project Title</p>
+              </div>
+              <div class="project-body">
+                <p>This is where the project description will go</p>
+                <p>This is where the project description will go</p>
+                <p>This is where the project description will go</p>
+              </div>
+              <div
+                class="flex flex-row justify-center mt-24 gap-8 content-center"
+              >
+                <button class="contact-btn">
+                  <p>Learn More</p>
+                </button>
+                <div
+                  class="bg-white max-h-12 self-center cursor-pointer transition-all hover:scale-125"
+                >
+                  <img
+                    src="./public/github_logo.png"
+                    alt="Image"
+                    width="50px"
+                    height="50px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-section-container" id="contact">
+          <h1>Contact</h1>
+          <p>Like what you see? Lets talk</p>
+          <div class="flex flex-row justify-center content-center gap-12 mt-8">
+            <p>Email: aj132@icloud.com</p>
+            <p>Phone: 706-436-1212</p>
+          </div>
+          <div class="flex flex-row justify-center content-center gap-12 mt-8">
+            <img
+              src="./public/github_logo.png"
+              alt="Image"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="./public/github_logo.png"
+              alt="Image"
+              width="50px"
+              height="50px"
+            />
+            <img
+              src="./public/github_logo.png"
+              alt="Image"
+              width="50px"
+              height="50px"
+            />
+          </div>
+        </div>
       </div>
     </div>
   </body>

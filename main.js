@@ -1,24 +1,74 @@
-// import "./css/style.css";
-// import javascriptLogo from "./javascript.svg";
-// import viteLogo from "/vite.svg";
-// import { setupCounter } from "./counter.js";
+document.querySelectorAll("[data-tooltip]").forEach((el) => {
+  el.addEventListener("mouseover", function () {
+    this.setAttribute(
+      "data-tooltip",
+      this.getAttribute("data-tooltip")
+        .replace(/&lt;/g, "<")
+        .replace(/&gt;/g, ">")
+    );
+  });
+});
 
-// document.querySelector("#app").innerHTML = `
-//   <div>
-//     <a href="https://vitejs.dev" target="_blank">
-//       <img src="${viteLogo}" class="logo" alt="Vite logo" />
-//     </a>
-//     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-//       <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-//     </a>
-//     <h1>Hello Vite!</h1>
-//     <div class="card">
-//       <button id="counter" type="button"></button>
-//     </div>
-//     <p class="read-the-docs">
-//       Click on the Vite logo to learn more
-//     </p>
-//   </div>
-// `;
+window.onload = function () {
+  var currentImageIndex = 0;
+  var images = document.querySelectorAll(".carousel-image");
+  var indicatorsContainer = document.getElementById("carousel-indicators");
+  var timer;
 
-// setupCounter(document.querySelector("#counter"));
+  // Initialize indicators and images
+  for (var i = 0; i < images.length; i++) {
+    var indicator = document.createElement("div");
+    indicator.className = "indicator";
+
+    // Add a click event listener to each indicator
+    indicator.addEventListener(
+      "click",
+      (function (index) {
+        return function () {
+          // Clear existing timer
+          clearInterval(timer);
+
+          // Remove active classes
+          images[currentImageIndex].classList.remove("active");
+          indicators[currentImageIndex].classList.remove("active");
+
+          // Update current image index
+          currentImageIndex = index;
+
+          // Add active classes
+          images[currentImageIndex].classList.add("active");
+          indicators[currentImageIndex].classList.add("active");
+
+          // Restart timer
+          timer = setInterval(updateCarousel, 8000);
+        };
+      })(i)
+    );
+
+    indicatorsContainer.appendChild(indicator);
+  }
+
+  var indicators = document.querySelectorAll(".indicator");
+
+  function updateCarousel() {
+    // Remove active classes
+    images[currentImageIndex].classList.remove("active");
+    indicators[currentImageIndex].classList.remove("active");
+
+    // Increment index
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+
+    // Add active classes
+    images[currentImageIndex].classList.add("active");
+    indicators[currentImageIndex].classList.add("active");
+  }
+
+  updateCarousel(); // Show first image
+  timer = setInterval(updateCarousel, 8000); // Change image every 2 seconds
+};
+
+var button = document.getElementById("learn-more-proserv");
+
+button.addEventListener("click", function () {
+  window.location.href = "ProServ/";
+});

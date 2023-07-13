@@ -1,0 +1,135 @@
+.projects-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 100px;
+  background-color: #0c0c0c;
+
+  height: fit-content;
+  width: 100%;
+
+  font-size: 6rem;
+  font-weight: 600;
+
+  color: white;
+
+  margin-top: 100px;
+
+  padding: 10rem;
+}
+
+.project-container {
+  width: 100%;
+  height: fit-content;
+
+  display: flex;
+  flex-direction: row;
+  gap: 400px;
+
+  align-items: center;
+  justify-content: start;
+
+  padding: 12rem 2rem;
+  margin-top: 3rem;
+  background-color: #141414;
+  border-radius: 25px;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-info {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+
+  color: white;
+}
+
+.project-title {
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.project-body {
+  font-size: 1.4rem;
+  font-weight: 350;
+  margin-top: 0.5rem;
+}
+
+.project-body p {
+  margin-top: 2.4rem;
+}
+
+/* Carousel code */
+#carousel {
+  position: relative;
+  width: 600px;
+  height: 600px;
+
+  padding-bottom: 30px; /* Space for indicators */
+}
+
+.carousel-images {
+  width: 600px;
+  height: 100%;
+  display: flex; /* Arrange images in a row */
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-image {
+  width: 400px;
+  height: 100%;
+  flex: 0 0 auto; /* Prevent images from shrinking or growing */
+  opacity: 0; /* Hide images initially */
+  transition: opacity 0.4s; /* Smoothly transition the opacity of images */
+  position: absolute; /* All images stack on top of each other */
+  object-fit: contain; /* Maintain aspect ratio */
+}
+
+.carousel-image.active {
+  opacity: 1; /* Show active image */
+}
+
+#carousel-indicators {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+#carousel-indicators .indicator {
+  display: inline-block;
+  margin: 0 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #aaa;
+  transition: all 0.3s; /* Smoothly transition the size and color of indicators */
+  cursor: pointer;
+}
+
+#carousel-indicators .indicator.active {
+  background-color: #ff5400;
+  width: 60px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#carousel-indicators .indicator:hover {
+  scale: 1.3;
+  margin: 0 1rem;
+  background-color: darkorange;
+}

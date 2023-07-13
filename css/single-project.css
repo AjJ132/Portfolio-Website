@@ -1,0 +1,87 @@
+.single-project-container {
+  width: 100%;
+  height: 100vh;
+
+  background-color: #0c0c0c;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 4rem;
+
+  color: white;
+  position: relative; /* Add this to ensure absolute positioning works correctly. */
+
+  animation: extendHeight 1s forwards;
+  animation-delay: 2.5s;
+}
+
+.single-project-title {
+  position: absolute; /* Use absolute positioning. */
+  top: 50%; /* Start at the center. */
+  left: 50%; /* Center the text horizontally. */
+  transform: translate(-50%, -50%); /* Center the text precisely. */
+
+  font-size: 7rem;
+  font-weight: 550;
+
+  animation: moveTextUp 1s forwards;
+  animation-delay: 1.5s;
+}
+
+@keyframes moveTextUp {
+  0% {
+    top: 50%; /* Starts from center. */
+  }
+  100% {
+    top: 10%; /* Moves to top. */
+    font-size: 5rem;
+  }
+}
+
+.single-project-body {
+  width: 45%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  position: relative;
+  opacity: 0%; /* Starts in visible. */
+
+  animation: showBody 0.5s forwards;
+  animation-delay: 2.5s;
+
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.single-project-body p {
+  margin-top: 2rem;
+}
+
+.single-project-body strong {
+  color: #ff5400;
+}
+
+@keyframes extendHeight {
+  0% {
+    height: 100vh;
+  }
+  100% {
+    height: 180vh;
+  }
+}
+
+@keyframes showBody {
+  0% {
+    opacity: 0%; /* Starts from center. */
+  }
+  100% {
+    opacity: 100%;
+  }
+}
