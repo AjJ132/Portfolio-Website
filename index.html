@@ -5,10 +5,46 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./css/output.css" rel="stylesheet" />
+    <link href="./css/main-page.css" rel="stylesheet" />
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="main.js"></script>
+    <!-- <div id="app"></div>
+    <script type="module" src="main.js"></script> -->
+    <div id="app">
+      <div class="page-container">
+        <div class="navbar">
+          <div class="navbar-logo">
+            <p>AJ</p>
+          </div>
+          <div class="navbar-items-container">
+            <p class="navbar-item">Home</p>
+            <p class="navbar-item">About</p>
+            <p class="navbar-item">Projects</p>
+            <button class="contact-btn">
+              <p>Contact</p>
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-section">
+          <img
+            class="hero-background"
+            src="./public/sample.png"
+            style="width: 900px; height: 900px"
+          />
+
+          <div class="hero-title">
+            <h1>Hi, I'm <strong>AJ</strong></h1>
+            <div class="text-start">
+              <div class="hero-subtext">
+                <p>Full Stack Developer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-section"></div>
+      </div>
+    </div>
   </body>
 </html>
