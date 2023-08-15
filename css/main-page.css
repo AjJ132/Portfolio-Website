@@ -120,8 +120,8 @@ html {
 }
 
 .hero-title-subtext strong {
-  animation: swapColorsStrong 0.5s forwards;
-  animation-delay: 2s;
+  animation: swapColorsStrong 0.4s forwards;
+  animation-delay: 1.85s;
 }
 
 @keyframes fadeIn {
