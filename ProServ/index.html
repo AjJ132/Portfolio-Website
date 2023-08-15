@@ -8,6 +8,7 @@
     <link href="../css/main-page.css" rel="stylesheet" />
     <link href="../css/about-section.css" rel="stylesheet" />
     <link href="../css/single-project.css" rel="stylesheet" />
+    <script src="./single-project.js"></script>
     <title>Vite App</title>
   </head>
   <body>
@@ -18,10 +19,10 @@
             <p>AJ</p>
           </div>
           <div class="navbar-items-container">
-            <a href="/#home" class="navbar-item">Home</a>
-            <a href="/#about" class="navbar-item">About</a>
-            <a href="/#projects" class="navbar-item">Projects</a>
-            <a href="/#contact" class="contact-btn">Contact</a>
+            <a href="#home" class="navbar-item">Home</a>
+            <a href="#about" class="navbar-item">About</a>
+            <a href="#projects" class="navbar-item">Projects</a>
+            <a href="#contact" class="navbar-item">Contact</a>
           </div>
         </div>
         <div class="single-project-container">
@@ -64,24 +65,16 @@
               Github repo and website are below.
             </p>
 
-            <div class="flex flex-row gap-8 content-start mt-8">
-              <a href="https://github.com/AjJ132/ProServ" target="_blank">
-                <img
-                  src="../public/github_logo.png"
-                  alt="GitHub Logo"
-                  width="100px"
-                  height="100px"
-                  style="background-color: white; cursor: pointer"
-                />
-              </a>
-
-              <img
-                src="../public/vite.svg"
-                alt="GitHub Logo"
-                width="100px"
-                height="100px"
-                style="cursor: pointer"
-              />
+            <div id="carousel">
+              <div class="carousel-images">
+                <img class="carousel-image" src="./public/ProServ-Mobile.png" />
+                <img class="carousel-image" src="../public/vite.svg" />
+                <img class="carousel-image" src="../public/sample.png" />
+                <!-- Add more images as needed -->
+              </div>
+              <div id="carousel-indicators">
+                <!-- Indicators will be dynamically added here with JavaScript -->
+              </div>
             </div>
 
             <div class="text-center mt-16">
@@ -98,6 +91,7 @@
                 <div class="skill">ASP .NET</div>
                 <div class="skill">Blazor</div>
                 <div class="skill">Azure</div>
+                <div class="skill">SwiftUI</div>
 
                 <div class="skill">CI/CD</div>
                 <div class="skill">Async</div>
