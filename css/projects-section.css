@@ -90,7 +90,8 @@
 }
 
 .carousel-image {
-  width: 400px;
+  width: 300px;
+  max-height: 450px;
   height: 100%;
   flex: 0 0 auto; /* Prevent images from shrinking or growing */
   opacity: 0; /* Hide images initially */
