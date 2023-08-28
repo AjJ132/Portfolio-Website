@@ -23,8 +23,8 @@
           <div class="navbar-items-container">
             <!-- <a href="#home" class="navbar-item">Home</a> -->
             <a href="#about" class="navbar-item">About</a>
-            <a href="#experience" class="navbar-item">Experience</a>
             <a href="#projects" class="navbar-item">Projects</a>
+            <a href="#experience" class="navbar-item">Experience</a>
             <a href="#contact" class="navbar-item">Contact</a>
           </div>
         </div>
@@ -105,47 +105,6 @@
             </div>
           </div>
         </div>
-        <div class="experience-section-container" id="experience">
-          <p>Experience</p>
-          <div class="bar-horizontal-small"></div>
-
-          <div class="experience-section-content">
-            <div class="sidebar">
-              <button class="tab" data-tab="0">Haering Precision</button>
-              <button class="tab" data-tab="1">Section 2</button>
-              <button class="tab" data-tab="2">Section 3</button>
-            </div>
-            <div class="content">
-              <div id="content-0" class="content-section">
-                <div class="experience-section-content-title">
-                  <p>
-                    Haering Precision -
-                    <strong>Intern Software Developer</strong>
-                  </p>
-                </div>
-                <div class="date-range-container">
-                  <p>Jun - Aug</p>
-                  <p>|</p>
-                  <p>2022 / 2023</p>
-                </div>
-                <div class="experience-section-content-info">
-                  <ul>
-                    <li>Developed ASP.NET applications</li>
-                    <li>Maintained MSSQL and Postgres databases</li>
-                    <li>Created and maintained a CI/CD pipeline</li>
-                    <li></li>
-                  </ul>
-                </div>
-              </div>
-              <p id="content-1" class="content-section" hidden>
-                Content for Section 2
-              </p>
-              <p id="content-2" class="content-section" hidden>
-                Content for Section 3
-              </p>
-            </div>
-          </div>
-        </div>
         <div class="projects-section-container" id="projects">
           <p>PROJECTS</p>
           <div class="bar-horizontal-small"></div>
@@ -197,40 +156,94 @@
           </div>
 
           <div class="project-container">
-            <div class="project-image">
-              <img
-                src="./public/vite.svg"
-                alt="Image"
-                width="400px"
-                height="400px"
-              />
+            <div id="carousel">
+              <div class="carousel-i mages">
+                <img class="carousel-image" src="./public/github_logo.png" />
+                <img class="carousel-image" src="./public/vite.svg" />
+                <img class="carousel-image" src="./public/ProServ-Mobile.png" />
+                <!-- Add more images as needed -->
+              </div>
+              <div id="carousel-indicators">
+                <!-- Indicators will be dynamically added here with JavaScript -->
+              </div>
             </div>
+
             <div class="project-info">
               <div class="project-title">
-                <p>Project Title</p>
+                <p>Superfluous Weather App</p>
               </div>
               <div class="project-body">
-                <p>This is where the project description will go</p>
-                <p>This is where the project description will go</p>
-                <p>This is where the project description will go</p>
+                <p>
+                  Superfluous Weather is a testing grounds for Kubernetes setups
+                  and technologies. I created super-weather to learn more about
+                  Kubernetes and how to deploy applications to the cloud.
+                </p>
+                <p>
+                  It was made using several tech stacks and is combined at the
+                  end using one Kubernetes cluster. GOLANG is the prefferred
+                  language of choice in this project. API requests are routed
+                  from the frontend through several pods and containers to fetch
+                  the data. Data can either be live pulled from a weather API or
+                  if it is cached can be fetched from a MONGODB database. The
+                  MONGODB database features TTL (time to live) in order to keep
+                  data fresh and relevant.
+                </p>
+                <p>
+                  Currently live and fully maintained, ProServ hosted its first
+                  customer in 2023. The initial product development took
+                  approximately three months. ProServ's technical infrastructure
+                  is powered by Azure Web App hosting, SQL technologies, and
+                  maintains a CI/CD pipeline through Github Actions.
+                </p>
               </div>
               <div
                 class="flex flex-row justify-center mt-24 gap-8 content-center"
               >
-                <button class="contact-btn">
+                <button class="contact-btn" id="learn-more-proserv">
                   <p>Learn More</p>
                 </button>
-                <div
-                  class="bg-white max-h-12 self-center cursor-pointer transition-all hover:scale-125"
-                >
-                  <img
-                    src="./public/github_logo.png"
-                    alt="Image"
-                    width="50px"
-                    height="50px"
-                  />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="experience-section-container" id="experience">
+          <p>Experience</p>
+          <div class="bar-horizontal-small"></div>
+
+          <div class="experience-section-content">
+            <div class="sidebar">
+              <button class="tab" data-tab="0">Haering Precision</button>
+              <button class="tab" data-tab="1">Section 2</button>
+              <button class="tab" data-tab="2">Section 3</button>
+            </div>
+            <div class="content">
+              <div id="content-0" class="content-section">
+                <div class="experience-section-content-title">
+                  <p>
+                    Haering Precision -
+                    <strong>Intern Software Developer</strong>
+                  </p>
+                </div>
+                <div class="date-range-container">
+                  <p>Jun - Aug</p>
+                  <p>|</p>
+                  <p>2022 / 2023</p>
+                </div>
+                <div class="experience-section-content-info">
+                  <ul>
+                    <li>Developed ASP.NET applications</li>
+                    <li>Maintained MSSQL and Postgres databases</li>
+                    <li>Created and maintained a CI/CD pipeline</li>
+                    <li></li>
+                  </ul>
                 </div>
               </div>
+              <p id="content-1" class="content-section" hidden>
+                Content for Section 2
+              </p>
+              <p id="content-2" class="content-section" hidden>
+                Content for Section 3
+              </p>
             </div>
           </div>
         </div>
