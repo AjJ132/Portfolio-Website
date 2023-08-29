@@ -1,4 +1,4 @@
-import { initCarousel } from './caraouselModule.js';
+import { initCarousel } from "./caraouselModule.js";
 
 document.querySelectorAll("[data-tooltip]").forEach((el) => {
   el.addEventListener("mouseover", function () {
@@ -11,15 +11,10 @@ document.querySelectorAll("[data-tooltip]").forEach((el) => {
   });
 });
 
-window.onload = function() {
-  initCarousel('proserv-carousel');
-  initCarousel('superweather-carousel');
-}
-var button = document.getElementById("learn-more-proserv");
-
-button.addEventListener("click", function () {
-  window.location.href = "ProServ/";
-});
+window.onload = function () {
+  initCarousel("proserv-carousel");
+  initCarousel("superweather-carousel");
+};
 
 document.querySelectorAll(".tab").forEach((tab) => {
   tab.addEventListener("click", function () {
