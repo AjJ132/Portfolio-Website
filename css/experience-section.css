@@ -96,3 +96,11 @@
   font-weight: 400;
   margin-bottom: 20px;
 }
+
+.experience-section-content-info ul {
+  list-style: disc;
+}
+
+.experience-section-content-info li {
+  color: white;
+}

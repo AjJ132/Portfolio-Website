@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="public/memoji.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./css/output.css" rel="stylesheet" />
     <link href="./css/main-page.css" rel="stylesheet" />
@@ -112,7 +112,7 @@
           <div class="project-container" data-carousel="proserv-carousel">
             <div class="carousel">
               <div class="carousel-images">
-                <img class="carousel-image" src="./public/github_logo.png" />
+                <img class="carousel-image" src="./public/proserv-temp.png" />
                 <img class="carousel-image" src="./public/vite.svg" />
                 <img class="carousel-image" src="./public/ProServ-Mobile.png" />
                 <!-- Add more images as needed -->
@@ -124,7 +124,7 @@
 
             <div class="project-info">
               <div class="project-subtitle">
-                <p>Featured Project</p>
+                <p>Streamlining Coach-Athlete Communication</p>
               </div>
               <div class="project-title">
                 <p>ProServ</p>
@@ -135,6 +135,7 @@
                   to athletes easier.
                 </p>
               </div>
+
               <div
                 class="flex flex-row justify-center mt-16 gap-8 content-center"
               >
@@ -156,51 +157,59 @@
           </div>
 
           <div class="project-container" data-carousel="superweather-carousel">
-            <div class="carousel">
-              <div class="carousel-images">
-                <img class="carousel-image" src="./public/github_logo.png" />
-                <img class="carousel-image" src="./public/vite.svg" />
-                <img class="carousel-image" src="./public/ProServ-Mobile.png" />
-              </div>
-              <div class="carousel-indicators">
-                <!-- ... -->
-              </div>
-            </div>
-
             <div class="project-info">
+              <div class="project-subtitle">
+                <p>Scalable Weather Services on Kubernetes</p>
+              </div>
               <div class="project-title">
-                <p>Superfluous Weather App</p>
+                <p>Superfluous Weather</p>
               </div>
               <div class="project-body">
                 <p>
-                  Superfluous Weather is a testing grounds for Kubernetes setups
-                  and technologies. I created super-weather to learn more about
-                  Kubernetes and how to deploy applications to the cloud.
-                </p>
-                <p>
-                  It was made using several tech stacks and is combined at the
-                  end using one Kubernetes cluster. GOLANG is the prefferred
-                  language of choice in this project. API requests are routed
-                  from the frontend through several pods and containers to fetch
-                  the data. Data can either be live pulled from a weather API or
-                  if it is cached can be fetched from a MONGODB database. The
-                  MONGODB database features TTL (time to live) in order to keep
-                  data fresh and relevant.
-                </p>
-                <p>
-                  Currently live and fully maintained, ProServ hosted its first
-                  customer in 2023. The initial product development took
-                  approximately three months. ProServ's technical infrastructure
-                  is powered by Azure Web App hosting, SQL technologies, and
-                  maintains a CI/CD pipeline through Github Actions.
+                  Kubernetes cluster designed to handle a high volume of traffic
+                  acros multiple services.
                 </p>
               </div>
+
               <div
-                class="flex flex-row justify-center mt-24 gap-8 content-center"
+                class="flex flex-row justify-center mt-16 gap-8 content-center"
               >
-                <button class="contact-btn" id="learn-more-proserv">
-                  <p>Learn More</p>
-                </button>
+                <a
+                  href="https://github.com/AjJ132/superfluous-weather-app"
+                  target="_blank"
+                >
+                  <button class="contact-btn">
+                    <p>Code</p>
+                  </button>
+                </a>
+                <a
+                  href="https://proservclient.azurewebsites.net/"
+                  target="_blank"
+                >
+                  <button class="contact-btn">
+                    <p>Live</p>
+                  </button>
+                </a>
+              </div>
+            </div>
+
+            <div class="carousel">
+              <div class="carousel-images">
+                <img
+                  style="scale: 1.5"
+                  class="carousel-image"
+                  src="./public/kubernetes_dashboard.png"
+                />
+                <img
+                  style="scale: 1.5"
+                  class="carousel-image"
+                  src="./public/super-weather-frontend.png"
+                />
+
+                <!-- Add more images as needed -->
+              </div>
+              <div class="carousel-indicators">
+                <!-- Indicators will be dynamically added here with JavaScript -->
               </div>
             </div>
           </div>
@@ -212,8 +221,6 @@
           <div class="experience-section-content">
             <div class="sidebar">
               <button class="tab" data-tab="0">Haering Precision</button>
-              <button class="tab" data-tab="1">Section 2</button>
-              <button class="tab" data-tab="2">Section 3</button>
             </div>
             <div class="content">
               <div id="content-0" class="content-section">
@@ -230,10 +237,9 @@
                 </div>
                 <div class="experience-section-content-info">
                   <ul>
-                    <li>Developed ASP.NET applications</li>
-                    <li>Maintained MSSQL and Postgres databases</li>
-                    <li>Created and maintained a CI/CD pipeline</li>
-                    <li></li>
+                    <li>Developed ASP.NET Full-stack Blazor applications.</li>
+                    <li>Maintained MSSQL and Postgres databases.</li>
+                    <li>Created and maintained a CI/CD pipeline.</li>
                   </ul>
                 </div>
               </div>
