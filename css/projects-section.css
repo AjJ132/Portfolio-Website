@@ -20,24 +20,24 @@
 }
 
 .project-container {
-  width: 100%;
+  width: 50%;
   height: fit-content;
 
   display: flex;
   flex-direction: row;
-  gap: 400px;
 
   align-items: center;
   justify-content: start;
 
-  padding: 12rem 2rem;
+  padding: 2rem;
   margin-top: 3rem;
-  background-color: #141414;
+  /* background-color: #141414; */
   border-radius: 25px;
 }
 
 .project-image {
-  width: 100%;
+  background-color: green;
+  width: auto;
   height: 100%;
 
   display: flex;
@@ -54,6 +54,7 @@
   justify-content: start;
   align-items: start;
 
+  gap: 0;
   color: white;
 }
 
@@ -62,20 +63,25 @@
   font-weight: 500;
 }
 
+.project-subtitle {
+  font-size: 1.5rem;
+  font-weight: 350;
+  color: #aaa;
+}
+
 .project-body {
   font-size: 1.4rem;
   font-weight: 350;
-  margin-top: 0.5rem;
-}
-
-.project-body p {
-  margin-top: 2.4rem;
+  padding: 1rem;
+  width: 20vw;
+  background-color: #141414;
+  border-radius: 18px;
 }
 
 /* Carousel code */
 .carousel {
   position: relative;
-  width: 600px;
+  width: 100%;
   height: 600px;
 
   padding-bottom: 30px; /* Space for indicators */
@@ -99,7 +105,6 @@
   position: absolute; /* All images stack on top of each other */
   object-fit: contain; /* Maintain aspect ratio */
 }
-
 
 .carousel-image.active {
   opacity: 1; /* Show active image */
