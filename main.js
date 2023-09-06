@@ -1,5 +1,15 @@
 import { initCarousel } from "./caraouselModule.js";
 
+document.addEventListener("DOMContentLoaded", function () {
+  const menu = document.querySelector("#mobile-menu");
+  const menuLinks = document.querySelector(".navbar-items-container");
+
+  menu.addEventListener("click", function () {
+    menu.classList.toggle("is-active");
+    menuLinks.classList.toggle("active");
+  });
+});
+
 document.querySelectorAll("[data-tooltip]").forEach((el) => {
   el.addEventListener("mouseover", function () {
     this.setAttribute(
