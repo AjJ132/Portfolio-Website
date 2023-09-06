@@ -37,7 +37,10 @@
 }
 
 .about-section-content {
-  width: 100%;
+  width: 80%;
+  min-width: 200px;
+  max-width: 2000px;
+
   height: fit-content;
 
   display: flex;

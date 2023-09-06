@@ -75,8 +75,18 @@
   font-weight: 350;
   padding: 1rem;
   width: 20vw;
-  background-color: #141414;
-  border-radius: 18px;
+  /* background-color: #141414; */
+  /* border-radius: 18px; */
+  color: gray; /* Sets the text color to gray */
+}
+
+.project-body ul {
+  list-style-type: disc; /* Adds bullet points */
+  /* padding-left: 2rem; Adds padding to the left of list items */
+}
+
+.project-body li {
+  margin-bottom: 1rem; /* Adds spacing between list items */
 }
 
 /* Carousel code */
@@ -105,10 +115,15 @@
   transition: opacity 0.4s; /* Smoothly transition the opacity of images */
   position: absolute; /* All images stack on top of each other */
   object-fit: contain; /* Maintain aspect ratio */
+
+  overflow: hidden;
+  border-radius: 25px;
 }
 
 .carousel-image.active {
   opacity: 1; /* Show active image */
+  overflow: hidden;
+  border-radius: 25px;
 }
 .carousel-indicators {
   position: absolute;
