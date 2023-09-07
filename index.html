@@ -35,18 +35,22 @@
         </div>
 
         <div class="hero-section" id="home">
-          <!-- <img
-            class="hero-background"
-            src="./public/sample.png"
-            style="width: 900px; height: 900px"
-          /> -->
+          <div class="hero-title">
+            <h1>Hi, I'm <strong>AJ</strong></h1>
+            <div class="text-start">
+              <div class="hero-subtext">
+                <p>Full Stack Developer</p>
+              </div>
+            </div>
+          </div>
+
           <div class="hero-title-subtext">
             <p>
               I'm a
               <strong style="animation-delay: 1900ms"
                 >Software Engineering</strong
               >
-              student at Kennesaw State University, specializing in
+              student at Kennesaw State University, focusing on
               <strong style="animation-delay: 2000ms"
                 >Full-stack development</strong
               >
@@ -58,15 +62,6 @@
               <strong style="animation-delay: 2600ms">modern frameworks</strong
               >, I aim to build robust, scalable solutions.
             </p>
-          </div>
-
-          <div class="hero-title">
-            <h1>Hi, I'm <strong>AJ</strong></h1>
-            <div class="text-start">
-              <div class="hero-subtext">
-                <p>Full Stack Developer</p>
-              </div>
-            </div>
           </div>
         </div>
         <div class="about-section-container" id="about">
@@ -153,11 +148,9 @@
                 </ul>
               </div>
 
-              <div
-                class="flex flex-row justify-center mt-16 gap-8 content-center"
-              >
+              <div class="project-buttons">
                 <a href="https://github.com/AjJ132/ProServ" target="_blank">
-                  <button class="contact-btn">
+                  <button class="project-buttons-button">
                     <p>Code</p>
                   </button>
                 </a>
@@ -165,7 +158,7 @@
                   href="https://proservclient.azurewebsites.net/"
                   target="_blank"
                 >
-                  <button class="contact-btn">
+                  <button class="project-buttons-button">
                     <p>Live</p>
                   </button>
                 </a>
@@ -173,7 +166,11 @@
             </div>
           </div>
 
-          <div class="project-container" data-carousel="superweather-carousel">
+          <div
+            class="project-container"
+            data-carousel="superweather-carousel"
+            id="reverse-project-container"
+          >
             <div class="project-info">
               <div class="project-subtitle">
                 <p>Scalable Weather Services on Kubernetes</p>
@@ -189,14 +186,12 @@
                 </ul>
               </div>
 
-              <div
-                class="flex flex-row justify-center mt-16 gap-8 content-center"
-              >
+              <div class="project-buttons">
                 <a
                   href="https://github.com/AjJ132/superfluous-weather-app"
                   target="_blank"
                 >
-                  <button class="contact-btn">
+                  <button class="project-buttons-button">
                     <p>Code</p>
                   </button>
                 </a>
@@ -204,7 +199,7 @@
                   href="http://super-weather-app.eastus.cloudapp.azure.com/"
                   target="_blank"
                 >
-                  <button class="contact-btn">
+                  <button class="project-buttons-button">
                     <p>Live</p>
                   </button>
                 </a>
@@ -214,13 +209,11 @@
             <div class="carousel">
               <div class="carousel-images">
                 <img
-                  style="scale: 1.5"
-                  class="carousel-image"
+                  class="carousel-image scale-project-image"
                   src="./public/grafana-dashboard.png"
                 />
                 <img
-                  style="scale: 1.5"
-                  class="carousel-image"
+                  class="carousel-image scale-project-image"
                   src="./public/super-weather-frontend.png"
                 />
 
@@ -273,7 +266,7 @@
         <div class="contact-section-container" id="contact">
           <h1>Contact</h1>
           <p>Like what you see? Lets talk</p>
-          <div class="flex flex-row justify-center content-center gap-12 mt-8">
+          <div class="contact-method-container">
             <p>Email: aj132@icloud.com</p>
             <p>Phone: 706-436-1212</p>
           </div>
