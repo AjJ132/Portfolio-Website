@@ -1,5 +1,34 @@
 import { initCarousel } from "./caraouselModule.js";
 
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navbarItemsContainer = document.querySelector(
+    ".navbar-items-container"
+  );
+  const bars = document.querySelectorAll(".bar"); // Selecting all bars inside menu-toggle
+  const navbarItems = document.querySelectorAll(".navbar-item"); // Assuming individual items have the class "navbar-item"
+
+  menuToggle.addEventListener("click", function () {
+    navbarItemsContainer.classList.toggle("active");
+    this.classList.toggle("clicked");
+
+    bars.forEach((bar) => {
+      bar.classList.toggle("clicked");
+    });
+  });
+
+  navbarItems.forEach((item) => {
+    item.addEventListener("click", function () {
+      navbarItemsContainer.classList.remove("active");
+
+      menuToggle.classList.remove("clicked"); // Also toggle the menu button back to original state
+      bars.forEach((bar) => {
+        bar.classList.remove("clicked"); // Reset the bar color when an item is clicked
+      });
+    });
+  });
+});
+
 document.querySelectorAll("[data-tooltip]").forEach((el) => {
   el.addEventListener("mouseover", function () {
     this.setAttribute(

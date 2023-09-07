@@ -20,6 +20,11 @@
           <div class="navbar-logo">
             <a href="#home" class="navbar-item">AJ</a>
           </div>
+          <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
           <div class="navbar-items-container">
             <!-- <a href="#home" class="navbar-item">Home</a> -->
             <a href="#about" class="navbar-item">About</a>
@@ -30,18 +35,22 @@
         </div>
 
         <div class="hero-section" id="home">
-          <!-- <img
-            class="hero-background"
-            src="./public/sample.png"
-            style="width: 900px; height: 900px"
-          /> -->
+          <div class="hero-title">
+            <h1>Hi, I'm <strong>AJ</strong></h1>
+            <div class="text-start">
+              <div class="hero-subtext">
+                <p>Full Stack Developer</p>
+              </div>
+            </div>
+          </div>
+
           <div class="hero-title-subtext">
             <p>
               I'm a
               <strong style="animation-delay: 1900ms"
                 >Software Engineering</strong
               >
-              student at Kennesaw State University, specializing in
+              student at Kennesaw State University, focusing on
               <strong style="animation-delay: 2000ms"
                 >Full-stack development</strong
               >
@@ -54,15 +63,6 @@
               >, I aim to build robust, scalable solutions.
             </p>
           </div>
-
-          <div class="hero-title">
-            <h1>Hi, I'm <strong>AJ</strong></h1>
-            <div class="text-start">
-              <div class="hero-subtext">
-                <p>Full Stack Developer</p>
-              </div>
-            </div>
-          </div>
         </div>
         <div class="about-section-container" id="about">
           <p>About Me</p>
@@ -73,22 +73,26 @@
               <p>Get to know me!</p>
               <div class="text-body">
                 <p>
-                  I'm a <strong>Full Stack Software Engineer</strong> that likes
-                  to focus on efficency and overall performance inside
-                  applications. I have a backgrond in just about anything
-                  software related and am always up to the task.
+                  As a <strong>Full Stack Software Engineer</strong> with a
+                  focus on efficiency and performance, I bring a diverse skill
+                  set to the table. My expertise extends across various software
+                  technologies, allowing me to tackle complex challenges
+                  effectively.
                 </p>
                 <p>
-                  I am apart of a collegiate division 1 sports team and know
-                  what its like to work alongside others. I have gained a strong
-                  leadership background through sports and student council
-                  commitess.
+                  In addition to my technical skills, I am a member of a
+                  collegiate Division 1 track and field team, where I have honed
+                  my <strong>leadership</strong> abilities and
+                  <strong>time management</strong> skills. My experiences in
+                  competitive sports and student council committees have
+                  equipped me with a strong foundation for collaborative
+                  environments.
                 </p>
                 <p>
-                  I'm seeking a job where I can learn and grow as a
-                  <strong>Software Engineer</strong> and be challenged everyday
-                  that I come into work. Still unsure check out
-                  <a href="#projects">my projects</a> or
+                  I am eager to join a dynamic team where I can continually grow
+                  as a <strong>Software Engineer</strong> and confront new
+                  challenges every day. Interested to learn more? Please take a
+                  look at <a href="#projects">my projects</a> or feel free to
                   <a href="#contact">contact me</a>.
                 </p>
               </div>
@@ -148,11 +152,9 @@
                 </ul>
               </div>
 
-              <div
-                class="flex flex-row justify-center mt-16 gap-8 content-center"
-              >
+              <div class="project-buttons">
                 <a href="https://github.com/AjJ132/ProServ" target="_blank">
-                  <button class="contact-btn">
+                  <button class="project-buttons-button">
                     <p>Code</p>
                   </button>
                 </a>
@@ -160,7 +162,7 @@
                   href="https://proservclient.azurewebsites.net/"
                   target="_blank"
                 >
-                  <button class="contact-btn">
+                  <button class="project-buttons-button">
                     <p>Live</p>
                   </button>
                 </a>
@@ -168,7 +170,11 @@
             </div>
           </div>
 
-          <div class="project-container" data-carousel="superweather-carousel">
+          <div
+            class="project-container"
+            data-carousel="superweather-carousel"
+            id="reverse-project-container"
+          >
             <div class="project-info">
               <div class="project-subtitle">
                 <p>Scalable Weather Services on Kubernetes</p>
@@ -184,14 +190,12 @@
                 </ul>
               </div>
 
-              <div
-                class="flex flex-row justify-center mt-16 gap-8 content-center"
-              >
+              <div class="project-buttons">
                 <a
                   href="https://github.com/AjJ132/superfluous-weather-app"
                   target="_blank"
                 >
-                  <button class="contact-btn">
+                  <button class="project-buttons-button">
                     <p>Code</p>
                   </button>
                 </a>
@@ -199,7 +203,7 @@
                   href="http://super-weather-app.eastus.cloudapp.azure.com/"
                   target="_blank"
                 >
-                  <button class="contact-btn">
+                  <button class="project-buttons-button">
                     <p>Live</p>
                   </button>
                 </a>
@@ -209,13 +213,11 @@
             <div class="carousel">
               <div class="carousel-images">
                 <img
-                  style="scale: 1.5"
-                  class="carousel-image"
+                  class="carousel-image scale-project-image"
                   src="./public/grafana-dashboard.png"
                 />
                 <img
-                  style="scale: 1.5"
-                  class="carousel-image"
+                  class="carousel-image scale-project-image"
                   src="./public/super-weather-frontend.png"
                 />
 
@@ -268,7 +270,7 @@
         <div class="contact-section-container" id="contact">
           <h1>Contact</h1>
           <p>Like what you see? Lets talk</p>
-          <div class="flex flex-row justify-center content-center gap-12 mt-8">
+          <div class="contact-method-container">
             <p>Email: aj132@icloud.com</p>
             <p>Phone: 706-436-1212</p>
           </div>
