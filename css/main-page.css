@@ -378,7 +378,7 @@
   }
 
   .hero-title {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 600;
     color: white;
     position: absolute;
@@ -405,7 +405,7 @@
     animation-delay: 1.5s;
 
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 300;
     text-align: center;
 
@@ -434,7 +434,7 @@
   }
 
   .hero-subtext {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 400;
     opacity: 0%;
     animation: showText 0.5s forwards;
