@@ -445,11 +445,21 @@
 @media (width <= 390px) {
   .hero-title {
     font-size: 3rem;
+    animation: moveHeroTitleUp 0.8s forwards;
   }
   .hero-title-subtext {
     font-size: 1.2rem;
   }
   .hero-subtext {
     font-size: 1.5rem;
+  }
+
+  @keyframes moveHeroTitleUp {
+    0% {
+      transform: translateY(0%);
+    }
+    100% {
+      transform: translateY(-20%);
+    }
   }
 }
