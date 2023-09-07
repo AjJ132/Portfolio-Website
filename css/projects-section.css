@@ -95,8 +95,24 @@
     flex-direction: row;
     justify-content: center;
     margin-top: 16px;
-    gap: 8px;
+    gap: 1rem;
     align-content: center;
+  }
+
+  .project-buttons-button {
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 15px 30px;
+    border-radius: 12px;
+    background-color: #ff5400;
+    border: none;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+
+  .project-buttons-button:hover {
+    scale: 1.1;
   }
 
   /* Carousel code */
