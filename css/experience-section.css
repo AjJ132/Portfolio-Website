@@ -1,4 +1,7 @@
-@media (width > 768px) {
+@media (width < 1500px) {
+}
+
+@media (768px < width <= 1500px) {
   .experience-section-container {
     display: flex;
     flex-direction: column;
@@ -19,7 +22,7 @@
   }
 
   .experience-section-content {
-    margin-top: 300px;
+    margin-top: 4rem;
     width: 70%;
     height: 80%;
   }
@@ -104,6 +107,16 @@
 
   .experience-section-content-info li {
     color: white;
+  }
+}
+
+@media (768px < width <= 1200px) {
+  .experience-section-content {
+    font-size: 0.8rem;
+  }
+
+  .date-range-container {
+    font-size: 1.2rem;
   }
 }
 
