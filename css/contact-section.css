@@ -1,14 +1,47 @@
-@media (width > 768px) {
+@media (width > 1500px) {
   .contact-section-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    padding: 100px 10rem;
+    padding: 100px 4rem 3rem 4rem;
 
     background-color: #ff5400;
 
-    height: 50vh;
+    height: fit-content;
+    width: 100%;
+
+    font-size: 6rem;
+    font-weight: 600;
+
+    color: white;
+  }
+
+  .contact-section-container p {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .contact-method-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 8px;
+  }
+}
+
+@media (768px < width <= 1500px) {
+  .contact-section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 100px 4rem 3rem 4rem;
+
+    background-color: #ff5400;
+
+    height: fit-content;
     width: 100%;
 
     font-size: 6rem;

@@ -29,7 +29,407 @@
   background-color: #ff5400;
 }
 
-@media (width > 768px) {
+html {
+  scroll-behavior: smooth;
+}
+
+@media (width >= 1500px) {
+  .page-container {
+    background-color: #0c0c0c;
+
+    width: 100vw;
+
+    height: fit-content;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    /* margin: 0px 300px 50px 300px; */
+    height: 100px;
+    background-color: #0c0c0c;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-self: end;
+  }
+
+  .navbar-logo {
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: white;
+    margin-left: 3rem;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .navbar-items-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar-item {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: white;
+
+    margin: 0 10px;
+    padding: 0 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    transition: all 0.25s ease;
+  }
+
+  .navbar-item:hover {
+    color: #ff5400;
+    /* font-size: 3.1rem; */
+  }
+
+  .contact-btn {
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 15px 30px; /* This is to increase the button size */
+    border-radius: 18px; /* This gives the button rounded corners */
+    background-color: #ff5400; /* This sets the button's background color to orange */
+    border: none; /* This removes the button's border */
+    color: white; /* This sets the button's text color to white */
+    font-weight: bold; /* This makes the button's text bold */
+    transition: all 0.3s ease; /* This adds a smooth transition effect when the button's background color changes */
+  }
+
+  .contact-btn:hover {
+    background-color: darkorange; /* This changes the button's background color to a darker orange when you hover over it */
+    scale: 1.1; /* This increases the button's size when you hover over it */
+  }
+
+  .hero-section {
+    position: relative;
+    width: 100%;
+    height: 95vh;
+    z-index: 1;
+  }
+
+  .hero-title-subtext {
+    position: absolute;
+    opacity: 0;
+    animation: fadeIn 0.6s forwards;
+    animation-delay: 1.5s;
+    z-index: -1;
+
+    color: white;
+    font-size: 2rem;
+    font-weight: 300;
+
+    max-width: 650px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(10%, -35%);
+  }
+
+  .hero-title-subtext strong {
+    animation: swapColorsStrong 0.4s forwards;
+    animation-delay: 1.85s;
+  }
+
+  .hero-text-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-title {
+    font-size: 8rem;
+    font-weight: 600;
+    color: white;
+    margin: 0 100px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: start;
+
+    transition: all ease;
+
+    animation: moveToLeft 0.8s forwards;
+    animation-delay: 0.5s, 1.5s;
+  }
+
+  .hero-title-subtext {
+  }
+
+  .hero-title strong {
+    animation: swapColorsStrong 0.5s forwards;
+    animation-delay: 1s;
+  }
+
+  .hero-subtext {
+    font-size: 4rem;
+    font-weight: 400;
+    opacity: 0%;
+    animation: showText 0.5s forwards;
+    animation-delay: 1.1s;
+  }
+
+  @keyframes moveToLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-25%);
+    }
+  }
+
+  @keyframes swapColorsStrong {
+    0% {
+      color: white;
+    }
+    100% {
+      color: #ff5400;
+    }
+  }
+
+  @keyframes showText {
+    0% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+@media (1400px < width < 1500px) {
+  .page-container {
+    background-color: #0c0c0c;
+
+    width: 100vw;
+
+    height: fit-content;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    /* margin: 0px 300px 50px 300px; */
+    height: 100px;
+    background-color: #0c0c0c;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-self: end;
+  }
+
+  .navbar-logo {
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: white;
+    margin-left: 3rem;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .navbar-items-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar-item {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: white;
+
+    margin: 0 10px;
+    padding: 0 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    transition: all 0.25s ease;
+  }
+
+  .navbar-item:hover {
+    color: #ff5400;
+    /* font-size: 3.1rem; */
+  }
+
+  .contact-btn {
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 15px 30px; /* This is to increase the button size */
+    border-radius: 18px; /* This gives the button rounded corners */
+    background-color: #ff5400; /* This sets the button's background color to orange */
+    border: none; /* This removes the button's border */
+    color: white; /* This sets the button's text color to white */
+    font-weight: bold; /* This makes the button's text bold */
+    transition: all 0.3s ease; /* This adds a smooth transition effect when the button's background color changes */
+  }
+
+  .contact-btn:hover {
+    background-color: darkorange; /* This changes the button's background color to a darker orange when you hover over it */
+    scale: 1.1; /* This increases the button's size when you hover over it */
+  }
+
+  .hero-section {
+    position: relative;
+    width: 100%;
+    height: 95vh;
+    z-index: 1;
+  }
+
+  .hero-title-subtext {
+    position: absolute;
+    opacity: 0;
+    animation: fadeIn 0.6s forwards;
+    animation-delay: 1.5s;
+    z-index: -1;
+
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 300;
+
+    max-width: 500px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(15%, -35%);
+  }
+
+  .hero-title-subtext strong {
+    animation: swapColorsStrong 0.4s forwards;
+    animation-delay: 1.85s;
+  }
+
+  .hero-text-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-title {
+    font-size: 6rem;
+    font-weight: 600;
+    color: white;
+    margin: 0 100px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: start;
+
+    transition: all ease;
+
+    animation: moveToLeft 0.8s forwards;
+    animation-delay: 0.5s, 1.5s;
+  }
+  .hero-title strong {
+    animation: swapColorsStrong 0.5s forwards;
+    animation-delay: 1s;
+  }
+
+  .hero-subtext {
+    font-size: 3rem;
+    font-weight: 400;
+    opacity: 0%;
+    animation: showText 0.5s forwards;
+    animation-delay: 1.1s;
+  }
+
+  @keyframes moveToLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-25%);
+    }
+  }
+
+  @keyframes swapColorsStrong {
+    0% {
+      color: white;
+    }
+    100% {
+      color: #ff5400;
+    }
+  }
+
+  @keyframes showText {
+    0% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+@media (1200px < width <= 1400px) {
   .page-container {
     background-color: #0c0c0c;
 
@@ -145,14 +545,14 @@
     z-index: -1;
 
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 300;
 
-    max-width: 700px;
+    max-width: 500px;
 
     top: 50%;
     left: 50%;
-    transform: translate(20%, -35%);
+    transform: translate(10%, -35%);
   }
 
   .hero-title-subtext strong {
@@ -171,10 +571,12 @@
   }
 
   .hero-title {
-    font-size: 8rem;
+    font-size: 5rem;
     font-weight: 600;
     color: white;
-    margin: 0 100px;
+
+    width: 100%;
+
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -189,16 +591,13 @@
     animation-delay: 0.5s, 1.5s;
   }
 
-  .hero-title-subtext {
-  }
-
   .hero-title strong {
     animation: swapColorsStrong 0.5s forwards;
     animation-delay: 1s;
   }
 
   .hero-subtext {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 400;
     opacity: 0%;
     animation: showText 0.5s forwards;
@@ -210,7 +609,7 @@
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-20%);
+      transform: translateX(-25%);
     }
   }
 
@@ -242,13 +641,221 @@
   }
 }
 
-@media (width <= 768px) {
-  .menu-toggle {
+@media (768px < width <= 1200px) {
+  .page-container {
+    background-color: #0c0c0c;
+
+    width: 100vw;
+
+    height: fit-content;
+    min-height: 100vh;
+
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    /* margin: 0px 300px 50px 300px; */
+    height: 100px;
+    background-color: #0c0c0c;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-self: end;
+  }
+
+  .navbar-logo {
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: white;
+    margin-left: 3rem;
   }
 
   html {
     scroll-behavior: smooth;
+  }
+
+  .navbar-items-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar-item {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+
+    margin: 0 10px;
+    padding: 0 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    transition: all 0.25s ease;
+  }
+
+  .navbar-item:hover {
+    color: #ff5400;
+    /* font-size: 3.1rem; */
+  }
+
+  .contact-btn {
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 15px 30px; /* This is to increase the button size */
+    border-radius: 18px; /* This gives the button rounded corners */
+    background-color: #ff5400; /* This sets the button's background color to orange */
+    border: none; /* This removes the button's border */
+    color: white; /* This sets the button's text color to white */
+    font-weight: bold; /* This makes the button's text bold */
+    transition: all 0.3s ease; /* This adds a smooth transition effect when the button's background color changes */
+  }
+
+  .contact-btn:hover {
+    background-color: darkorange; /* This changes the button's background color to a darker orange when you hover over it */
+    scale: 1.1; /* This increases the button's size when you hover over it */
+  }
+
+  .hero-section {
+    position: relative;
+    width: 100%;
+    height: 95vh;
+    z-index: 1;
+  }
+
+  /* .hero-background {
+    position: absolute;
+    opacity: 0;
+    animation: fadeIn 0.6s forwards;
+    animation-delay: 2s;
+    z-index: -1;
+  
+  
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%, -50%);
+  } */
+
+  .hero-title-subtext {
+    position: absolute;
+    opacity: 0;
+    animation: fadeIn 0.6s forwards;
+    animation-delay: 1.5s;
+    z-index: -1;
+
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 300;
+
+    max-width: 375px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(10%, -35%);
+  }
+
+  .hero-title-subtext strong {
+    animation: swapColorsStrong 0.4s forwards;
+    animation-delay: 1.85s;
+  }
+
+  .hero-text-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-title {
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: white;
+
+    width: 100%;
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: start;
+
+    transition: all ease;
+
+    animation: moveToLeft 0.8s forwards;
+    animation-delay: 0.5s, 1.5s;
+  }
+
+  .hero-title strong {
+    animation: swapColorsStrong 0.5s forwards;
+    animation-delay: 1s;
+  }
+
+  .hero-subtext {
+    font-size: 2.5rem;
+    font-weight: 400;
+    opacity: 0%;
+    animation: showText 0.5s forwards;
+    animation-delay: 1.1s;
+  }
+
+  @keyframes moveToLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-25%);
+    }
+  }
+
+  @keyframes swapColorsStrong {
+    0% {
+      color: white;
+    }
+    100% {
+      color: #ff5400;
+    }
+  }
+
+  @keyframes showText {
+    0% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+@media (390px <= width <= 768px) {
+  .menu-toggle {
+    display: flex;
   }
 
   .navbar-items-container {
@@ -418,9 +1025,15 @@
     width: 100%;
     height: 100%;
 
-    padding: 1.3rem;
+    padding: 0 6rem;
 
     /* transform: translate(0, 0); */
+  }
+
+  @media (height > 600px) {
+    .hero-title-subtext {
+      top: 20%;
+    }
   }
 
   .hero-title strong {
@@ -442,16 +1055,75 @@
   }
 }
 
-@media (width <= 390px) {
-  .hero-title {
-    font-size: 3rem;
-    animation: moveHeroTitleUp 0.8s forwards;
+@media (width < 390px) {
+  .menu-toggle {
+    display: flex;
   }
-  .hero-title-subtext {
-    font-size: 1.2rem;
+
+  .navbar-items-container {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 80px;
+    left: 0;
+
+    animation: fadeIn 0.5s forwards;
+    transition: all 0.5s ease;
+    background-color: rgba(20, 20, 20, 0.8);
+    padding: 1rem;
   }
-  .hero-subtext {
-    font-size: 1.5rem;
+
+  .navbar-item {
+    margin: 15px 0;
+  }
+
+  .navbar-item:hover {
+    color: #ff5400;
+  }
+
+  .navbar-items-container.active {
+    display: flex;
+    color: white;
+    text-decoration: underline;
+
+    animation: fadeIn 0.5s forwards;
+    transition: all 0.5s ease;
+  }
+
+  .navbar {
+    position: fixed;
+    z-index: 999;
+
+    margin: 0px; /* Reset margins for smaller screens */
+    height: 80px; /* Reduce height */
+    padding: 0 10px; /* Reduce padding */
+
+    width: 100%;
+    background-color: rgba(20, 20, 20, 0.8);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar-logo {
+    font-size: 2.5rem; /* Reduce font size */
+    margin-left: 1rem; /* Reduce margin */
+    color: white;
+  }
+
+  .navbar-item {
+    font-size: 1.8rem; /* Reduce font size */
+    margin: 0 5px; /* Reduce margin */
+    padding: 0 5px; /* Reduce padding */
+  }
+
+  .contact-btn {
+    font-size: 1.2rem; /* Reduce font size */
+    padding: 10px 20px; /* Reduce padding */
   }
 
   @keyframes moveHeroTitleUp {
@@ -459,7 +1131,147 @@
       transform: translateY(0%);
     }
     100% {
-      transform: translateY(-20%);
+      transform: translateY(-10%);
+    }
+  }
+
+  @keyframes swapColorsStrong {
+    0% {
+      color: white;
+    }
+    100% {
+      color: #ff5400;
+    }
+  }
+
+  @keyframes showText {
+    0% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .page-container {
+    background-color: #0c0c0c;
+
+    width: 100vw;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+
+    overflow-x: hidden;
+  }
+
+  .hero-section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+    font-weight: 600;
+    color: white;
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: start;
+    transition: all ease;
+
+    width: 100%;
+    height: 100%;
+
+    animation: moveHeroTitleUp 0.8s forwards;
+    animation-delay: 0.5s, 1.5s;
+  }
+
+  .hero-title-subtext {
+    position: absolute;
+    opacity: 0;
+    animation: fadeIn 0.6s forwards;
+    animation-delay: 1.5s;
+
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 300;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 10%;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 0 4rem;
+
+    /* transform: translate(0, 0); */
+  }
+
+  @media (600px < height) {
+    .hero-title-subtext {
+      top: 12.5%;
+    }
+  }
+
+  @media (height < 600px) {
+    .hero-title-subtext {
+      top: 20%;
+    }
+  }
+
+  .hero-title strong {
+    animation: swapColorsStrong 0.5s forwards;
+    animation-delay: 1s;
+  }
+
+  .hero-title-subtext strong {
+    animation: swapColorsStrong 0.4s forwards;
+    animation-delay: 1.85s;
+  }
+
+  .hero-subtext {
+    font-size: 1.5rem;
+    font-weight: 400;
+    opacity: 0%;
+    animation: showText 0.5s forwards;
+    animation-delay: 1.1s;
+  }
+  .hero-title {
+    font-size: 3rem;
+    animation: moveHeroTitleUp 0.8s forwards;
+  }
+
+  @keyframes moveHeroTitleUp {
+    0% {
+      transform: translateY(0%);
+    }
+    100% {
+      transform: translateY(-15%);
     }
   }
 }
