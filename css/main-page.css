@@ -1167,8 +1167,6 @@ html {
 
     width: 100vw;
 
-    min-height: 100vh;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1180,6 +1178,7 @@ html {
   .hero-section {
     height: 100vh;
     width: 100%;
+    min-height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1222,12 +1221,12 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    top: 10%;
+    top: 15%;
 
     width: 100%;
     height: 100%;
 
-    padding: 0 4rem;
+    padding: 0 2rem;
 
     /* transform: translate(0, 0); */
   }
