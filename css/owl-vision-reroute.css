@@ -1,0 +1,42 @@
+.owl-vision-reroute-styles {
+  background-color: #0c0c0c;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.owl-vision-reroute-styles h1 {
+  color: #ffc629;
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.owl-vision-reroute-styles p {
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.owl-vision-reroute-styles strong {
+  color: #ffc629;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.owl-vision-reroute-styles button {
+  background-color: #ffc629;
+  border: none;
+  border-radius: 5px;
+  color: #0c0c0c;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
