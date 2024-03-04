@@ -1,3 +1,5 @@
+
+
 .home-container {
     width: 100%;
     display: flex;
@@ -11,14 +13,47 @@
     line-height: 35px;
     margin-top: 1rem;
 }
-.home-container a {
+
+
+.home-container svg{
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.home-container-envelope svg:hover{
     color: var(--tertiary-color);
-    font-size: 1.3rem;
-    font-weight: 350;
-    line-height: 35px;
-    margin-top: 1rem;
-    text-decoration: underline;
-    transition: color 0.3s ease;
+    scale: 1.1;
+}
+
+.home-container-linkedin svg:hover{
+    color: #0077B5;
+    scale: 1.1;
+}
+
+.home-container-github svg:hover{
+    color: #333;
+    scale: 1.1;
+}
+
+
+
+.home-hero-title h1{
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 5rem;
+}
+
+.home-hero-title h2{
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 400;
+}
+
+.home-hero-title p{
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 2rem;
 }
 
 
