@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import './Home.css';
+import Test1 from '../../assets/test1.jpg';
 
 interface HeroDynamicShadowProps {
     src: string;
@@ -38,6 +39,7 @@ const HeroDynamicShadow: React.FC<HeroDynamicShadowProps> = ({ src, backgroundIm
                 />
             ))}
             <img src={src} alt="Original" className="original-image" />
+            {/* <img src={Test1} alt="Original" /> */}
         </div>
     );
 };

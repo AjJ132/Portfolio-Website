@@ -1,0 +1,61 @@
+.project-carousel{
+
+}
+
+.project-carousel button{
+    background: var(--card-gradient);
+    padding: 1rem;
+    margin: 0 1rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    border-radius: 12px;
+
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .carousel-indicators button.active {
+    background-color: #333;
+  }
+
+.project-card{
+    background: var(--card-gradient);
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.project-card h2{
+    color: var(--text-color);
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+
+}
+
+.project-card h3{
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+}
+
+.project-card-information{
+    max-width: 400px;
+}
