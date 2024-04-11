@@ -1,0 +1,99 @@
+
+
+.home-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-container p {
+    color: var(--text-color);
+    font-size: 1.3rem;
+    font-weight: 350;
+    line-height: 35px;
+    margin-top: 1rem;
+}
+
+
+.home-container svg{
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.home-container-envelope svg:hover{
+    color: var(--tertiary-color);
+    scale: 1.1;
+}
+
+.home-container-linkedin svg:hover{
+    color: #0077B5;
+    scale: 1.1;
+}
+
+.home-container-github svg:hover{
+    color: #333;
+    scale: 1.1;
+}
+
+
+
+.home-hero-title h1{
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 5rem;
+}
+
+.home-hero-title h2{
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 400;
+}
+
+.home-hero-title p{
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 2rem;
+}
+
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 50%; 
+}
+
+.blurred-shadow {
+    filter: blur(20px); 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% + 40px); 
+    height: calc(100% + 40px); 
+    z-index: -1;
+    opacity: 0.8; 
+    border-radius: 50%; 
+    transition: all 4s /* Smooth transition for opacity and position */
+}
+
+.original-image {
+    display: block;
+    position: relative;
+    z-index: 2; 
+    border-radius: 50%;
+    width: 600px; 
+    height: 600px; 
+}
+/* Specific styles for each background image */
+.bg-0 {
+    /* Different initial positions, opacities, etc., if needed */
+}
+
+.bg-1 {
+    /* Different initial positions, opacities, etc., if needed */
+}
+
