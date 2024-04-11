@@ -1,10 +1,7 @@
 import React from 'react';
 import  ProfilePic  from '../../assets/Hero2.png';
-import ProfilePicUnaffected from '../../assets/Hero2Alt.png';
 import ProfilePicUnaffected2 from '../../assets/Hero2Alt2.png';
 import ProfilePicUnaffected3 from '../../assets/Hero2Alt3.png';
-
-import KSU_Logo from '../../assets/KSU_logo.png';
 
 import HeroDynamicShadow from './HeroDynamicShadow';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

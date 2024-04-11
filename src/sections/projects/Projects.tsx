@@ -1,7 +1,6 @@
 import React from 'react';
 import ProjectsCarousel from './ProjectsCarousel';
 import ProjectCard from './ProjectCard';
-import GithubLogo from '../../assets/github_logo.png';
 import SW1 from '../../assets/sw1.png';
 import SW2 from '../../assets/sw2.png';
 import StrideSync1 from '../../assets/stridesync1.png';

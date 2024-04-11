@@ -50,7 +50,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, subtitle, information,
                 />
               </div>
               <div className="carousel-indicators h-1/6">
-                {images.map((image, index) => (
+                {images.map((_image, index) => (
                   <span
                     key={index}
                     className={`carousel-bubble ${index === currentImageIndex ? 'active' : ''}`}

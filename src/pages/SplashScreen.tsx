@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './SplashScreen.css'; // Make sure to update the CSS file with the new styles
 
 const SplashScreen = () => {

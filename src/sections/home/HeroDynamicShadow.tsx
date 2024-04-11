@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from 'react';
 import './Home.css';
-import Test1 from '../../assets/test1.jpg';
 
 interface HeroDynamicShadowProps {
     src: string;
