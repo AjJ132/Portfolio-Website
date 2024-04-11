@@ -26,9 +26,9 @@ const ProjectsCarousel: React.FC<CarouselProps> = ({ elements }) => {
         <button onClick={goToPrev}>Prev</button>
         <div className="carousel-indicators">
         {elements.map((_, index) => (
-          <button
+          <span
             key={index}
-            className={currentIndex === index ? 'active' : ''}
+            className={`carousel-bubble-large ${index === currentIndex ? 'active' : ''}`}
             onClick={() => setCurrentIndex(index)}
           />
         ))}

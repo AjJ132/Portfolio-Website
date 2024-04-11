@@ -55,6 +55,18 @@
   padding: 1rem 4rem;
 }
 
+.contact-section {
+  margin: auto;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 30vh;
+  padding: 1rem 0;
+}
+
 .section-lg {
   margin: auto;
   max-width: 1400px;

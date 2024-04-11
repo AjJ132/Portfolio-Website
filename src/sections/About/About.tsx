@@ -64,13 +64,13 @@ const About: React.FC<AboutProps> = ({ id }) => {
                     <AboutCard 
                         title='Web Technologies' 
                         subtitle='React & .NET' 
-                        content='Developed dynamic web applications using React and .NET. Built and maintained scalable services like Superfluous Weather and ProServ, enhancing web functionality and user experience.' 
+                        content='Developed dynamic web applications using React and .NET. Built and maintained scalable services like Superfluous Weather and Stride Sync, enhancing web functionality and user experience.' 
                         icon={faCode}
                     />
                     <AboutCard 
                         title='Open Source Contributions' 
                         subtitle='Innovative Projects' 
-                        content='Contributed to open-source projects, including a Kubernetes-based scalable weather service and a Blazor WASM site for coach-athlete communication, using Golang, .NET, C#, and web technologies.' 
+                        content='Contributed to open-source projects, including a Kubernetes-based scalable weather service and a Typescript React site for coach-athlete communication, using Golang, .NET, C#, and other web technologies.' 
                         icon={faCodeBranch}
                     />
                     <AboutCard 
