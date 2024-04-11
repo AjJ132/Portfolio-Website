@@ -1,0 +1,12 @@
+{
+    "globalHeaders": {
+      "content-type": {
+        "value": "text/javascript"
+      }
+    },
+    "mimeTypes": {
+      ".js": "text/javascript",
+      ".tsx": "text/javascript"
+    }
+  }
+  
